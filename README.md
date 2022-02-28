@@ -7,7 +7,7 @@ This repository is a functionnal project combining Vue & Firebase Authentificati
 1. Cloner le dépôt GitHub du projet
 
 ```bash
-git clone https://github.com/libgit2/libgit2
+git clone https://github.com/Ewanescence/firebase-auth.git
 ```
 
 2. Installer les dépendances du projet
@@ -15,11 +15,20 @@ git clone https://github.com/libgit2/libgit2
 npm install
 ```
 
-3. Se rendre sur Firebase et activer l'authentification par email & mot de passe
+3. Se rendre sur Firebase
 
-4. Ajouter une application web à votre projet et copier votre configuration SDK dans **src > firebase > index.js**
+5. Se connecter à son compte
+
+6. Créer || Sélectionner un projet 
+
+4. Ajouter une application web à votre projet
+
+5. Installation et configuration du SDK
 
 ```javascript
+
+// VOUS AVEZ UNIQUEMENT À REMPLACER LA CONFIGURATION VIDE PAR LA VÔTRE
+
 const firebaseConfig = {
   apiKey: "" /*YOURAPIKEY"*/,
   authDomain: "" /*YOURAUTHDOMAIN"*/,
@@ -29,7 +38,10 @@ const firebaseConfig = {
   appId: "" /*YOURAPPID"*/,
   measurementId: "" /*YOURMEASUREMENTID"*/
 };
+
 ```
+
+6. Activer l'authentification sur Firebase (par mail et mot de passe seulement)
 
 ## Utilisation
 
