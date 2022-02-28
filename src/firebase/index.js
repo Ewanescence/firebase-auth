@@ -1,9 +1,12 @@
 import { initializeApp } from "firebase/app";
 
-import { getAnalytics } from 'firebase/analytics'
-import { getFirestore } from 'firebase/firestore'
+// Firebase required imports
 import { getAuth } from 'firebase/auth'
 
+// Firebase optional imports
+import { getAnalytics } from 'firebase/analytics'
+
+// Your firebase config (copy-paste it from your firebase project)
 const firebaseConfig = {
     apiKey: "",
     authDomain: "",
@@ -14,10 +17,13 @@ const firebaseConfig = {
     measurementId: ""
 };
 
+// Firebase app initialization
 const app = initializeApp(firebaseConfig)
 
-const analytics = getAnalytics(app)
-const firestore = getFirestore(app)
-const auth = getAuth(app)
+// Firebase required exports
+export const auth = getAuth(app)
 
-export { analytics, firestore, auth }
+// Firebase optional imports
+export const analytics = getAnalytics(app)
+
+

@@ -33,6 +33,7 @@
   export default {
     Name: "App",
     created() {
+      // Tries to get a user and initialize it 
       this.$store.dispatch('fetchUser')
     }
   }

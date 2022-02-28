@@ -1,24 +1,48 @@
-# firebase-auth
+# Vue x Firebase Auth
 
-## Project setup
+This repository is a functionnal project combining Vue & Firebase Authentification
+
+## Installation
+
+1. Cloner le dépôt GitHub du projet
+
+```bash
+git clone https://github.com/libgit2/libgit2
 ```
+
+2. Installer les dépendances du projet
+```bash
 npm install
 ```
 
-### Compiles and hot-reloads for development
+3. Se rendre sur Firebase et activer l'authentification par email & mot de passe
+
+4. Ajouter une application web à votre projet et copier votre configuration SDK dans **src > firebase > index.js**
+
+```javascript
+const firebaseConfig = {
+  apiKey: "" /*YOURAPIKEY"*/,
+  authDomain: "" /*YOURAUTHDOMAIN"*/,
+  projectId: "" /*YOURPROJECTID"*/,
+  storageBucket: "" /*YOURSTORAGEBUCKET"*/,
+  messagingSenderId: "" /*YOURMESSAGINGSENDERID"*/,
+  appId: "" /*YOURAPPID"*/,
+  measurementId: "" /*YOURMEASUREMENTID"*/
+};
 ```
+
+## Utilisation
+
+```bash 
+
+# Lancer un environnement de développement local
 npm run serve
-```
 
-### Compiles and minifies for production
-```
+# Compiler l'application web en mode production
 npm run build
+
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## License
+[GPL 3.0](https://choosealicense.com/licenses/gpl-3.0/)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

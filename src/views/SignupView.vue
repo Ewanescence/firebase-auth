@@ -39,8 +39,8 @@
         },
         methods: {
             register() {
-                this.$store.dispatch('register', this.form)
-                .then((res) => { if(res) this.error = res })
+                this.$store.dispatch('register', this.form) // Calls register action from our store
+                .then((res) => { if(res) this.error = res }) // ... and get error is the action returns one
             }
         }
     }

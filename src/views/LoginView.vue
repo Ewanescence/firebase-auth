@@ -39,8 +39,8 @@
         },
         methods: {
             login() {
-                this.$store.dispatch('login', this.form)
-                .then((res) => { if(res) this.error = res })
+                this.$store.dispatch('login', this.form) // Calls login action from our store...
+                .then((res) => { if(res) this.error = res }) // ... and get error is the action returns one
             }
         }
     }
